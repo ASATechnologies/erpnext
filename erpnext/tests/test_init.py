@@ -13,22 +13,22 @@ class TestInit(unittest.TestCase):
 
 		names = [
 			"Warehouse Name",
-			"ERPNext Foundation India",
+			"ASAERP Foundation India",
 			f"Gold - Member - {abbr}",
 			f" - {abbr}",
-			"ERPNext - Foundation - India",
-			f"ERPNext Foundation India - {abbr}",
+			"ASAERP - Foundation - India",
+			f"ASAERP Foundation India - {abbr}",
 			f"No-Space-{abbr}",
 			"- Warehouse",
 		]
 
 		expected_names = [
 			f"Warehouse Name - {abbr}",
-			f"ERPNext Foundation India - {abbr}",
+			f"ASAERP Foundation India - {abbr}",
 			f"Gold - Member - {abbr}",
 			f" - {abbr}",
-			f"ERPNext - Foundation - India - {abbr}",
-			f"ERPNext Foundation India - {abbr}",
+			f"ASAERP - Foundation - India - {abbr}",
+			f"ASAERP Foundation India - {abbr}",
 			f"No-Space-{abbr} - {abbr}",
 			f"- Warehouse - {abbr}",
 		]

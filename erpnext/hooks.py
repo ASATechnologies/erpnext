@@ -1,20 +1,20 @@
 app_name = "erpnext"
-app_title = "ERPNext"
-app_publisher = "Frappe Technologies Pvt. Ltd."
+app_title = "ASAERP"
+app_publisher = "ASA Technologies"
 app_description = """ERP made simple"""
 app_icon = "fa fa-th"
 app_color = "#e74c3c"
-app_email = "hello@frappe.io"
+app_email = "dev@asaerp.com"
 app_license = "GNU General Public License (v3)"
-source_link = "https://github.com/frappe/erpnext"
-app_logo_url = "/assets/erpnext/images/erpnext-logo.svg"
+source_link = "https://github.com/asatechnologies/erpnext"
+app_logo_url = "/assets/erpnext/images/asaerp-logo.png"
 
 
 add_to_apps_screen = [
 	{
 		"name": "erpnext",
-		"logo": "/assets/erpnext/images/erpnext-logo-blue.png",
-		"title": "ERPNext",
+		"logo": "/assets/erpnext/images/asaerp-logo-rounded.png",
+		"title": "ASAERP",
 		"route": "/app/home",
 		"has_permission": "erpnext.check_app_permission",
 	}
@@ -112,8 +112,8 @@ calendars = ["Task", "Work Order", "Sales Order", "Holiday List", "ToDo"]
 website_generators = ["BOM", "Sales Partner"]
 
 website_context = {
-	"favicon": "/assets/erpnext/images/erpnext-favicon.svg",
-	"splash_image": "/assets/erpnext/images/erpnext-logo.svg",
+	"favicon": "/assets/erpnext/images/favicon.ico",
+	"splash_image": "/assets/erpnext/images/asaerp-logo.png",
 }
 
 # nosemgrep
@@ -486,8 +486,8 @@ email_brand_image = "assets/erpnext/images/erpnext-logo.jpg"
 default_mail_footer = """
 	<span>
 		Sent via
-		<a class="text-muted" href="https://frappe.io/erpnext?source=via_email_footer" target="_blank">
-			ERPNext
+		<a class="text-muted" href="https://asaerp.com" target="_blank">
+			ASAERP
 		</a>
 	</span>
 """
@@ -610,7 +610,7 @@ user_data_fields = [
 	},
 ]
 
-# ERPNext doctypes for Global Search
+# ASAERP doctypes for Global Search
 global_search_doctypes = {
 	"Default": [
 		{"doctype": "Customer", "index": 0},
