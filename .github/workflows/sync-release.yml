@@ -1,0 +1,90 @@
+name: Sync Upstream Release Tags & Publish
+
+on:
+  schedule:
+    # Runs every 6 hours to check for new upstream release tags
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+    inputs:
+      upstream_tag:
+        description: "Upstream ERPNext release tag (e.g., v15.30.1 or v16.5.0)"
+        required: true
+
+permissions:
+  contents: write
+  packages: write
+
+jobs:
+  check-rebase-and-release:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Configure Git Identity
+      - name: Configure Git User
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      # Step 2: Checkout custom repository with full history
+      - name: Checkout Custom Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 3: Identify latest upstream tag
+      - name: Check for New Upstream Tag
+        id: tag_check
+        run: |
+          if [ "${{ github.event_name }}" == "workflow_dispatch" ]; then
+            TAG="${{ github.event.inputs.upstream_tag }}"
+          else
+            # Fetch latest release tag for v15 or v16 from upstream GitHub API
+            TAG=$(curl -s https://api.github.com/repos/frappe/erpnext/releases | \
+              jq -r '.[].tag_name' | grep -E '^v(15|16)\.' | head -n 1)
+          fi
+
+          echo "Target upstream tag: $TAG"
+
+          # Check if tag already exists in local repository
+          if git rev-parse "$TAG" >/dev/null 2>&1; then
+            echo "Tag $TAG already exists locally. Skipping run."
+            echo "EXISTS=true" >> $GITHUB_OUTPUT
+          else
+            echo "New upstream tag detected: $TAG"
+            echo "EXISTS=false" >> $GITHUB_OUTPUT
+            echo "TAG=$TAG" >> $GITHUB_OUTPUT
+          fi
+
+      # Step 4: Rebase branding branch onto upstream release tag & retag
+      - name: Rebase Branding Branch & Apply Tag
+        if: steps.tag_check.outputs.EXISTS == 'false'
+        run: |
+          TARGET_TAG="${{ steps.tag_check.outputs.TAG }}"
+
+          # Dynamically determine branding branch (e.g., asaerp-15 or asaerp-16)
+          MAJOR_VERSION=$(echo "$TARGET_TAG" | grep -oP '^v\K[0-9]+')
+          BRANDING_BRANCH="asaerp-${MAJOR_VERSION}"
+
+          echo "Target Tag: ${TARGET_TAG}"
+          echo "Branding Branch: ${BRANDING_BRANCH}"
+
+          # Add upstream remote & fetch target release tag
+          git remote add upstream https://github.com/frappe/erpnext.git
+          git fetch upstream tag $TARGET_TAG --no-tags
+
+          # Checkout your specific branding branch
+          git checkout ${BRANDING_BRANCH}
+
+          # Rebase your branding branch directly onto the fetched upstream tag
+          git rebase $TARGET_TAG
+
+          # Force push the rebased branding branch to your origin repository
+          git push origin ${BRANDING_BRANCH} --force-with-lease
+
+          # Delete the local temporary tag fetched from upstream
+          git tag -d "$TARGET_TAG"
+
+          # Tag the HEAD of your rebased branding branch with the exact upstream version name
+          git tag -a "$TARGET_TAG" -m "Release $TARGET_TAG"
+          git push origin "$TARGET_TAG"
+
