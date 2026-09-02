@@ -720,7 +720,7 @@ class Company(NestedSet):
 			frappe.db.sql("delete from tabBOM where company=%s", self.name)
 			for dt in ("BOM Operation", "BOM Item", "BOM Scrap Item", "BOM Explosion Item"):
 				frappe.db.sql(
-					"delete from `tab{}` where parent in ({})" "".format(dt, ", ".join(["%s"] * len(boms))),
+					"delete from `tab{}` where parent in ({})".format(dt, ", ".join(["%s"] * len(boms))),
 					tuple(boms),
 				)
 
@@ -799,7 +799,7 @@ def update_company_current_month_sales(company):
 		)
 	).run(pluck=True)[0] or 0
 
-	# Fieldname in standard ERPNext is `total_monthly_sales`
+	# Fieldname in standard ASAERP is `total_monthly_sales`
 	frappe.db.set_value(
 		"Company",
 		company,
