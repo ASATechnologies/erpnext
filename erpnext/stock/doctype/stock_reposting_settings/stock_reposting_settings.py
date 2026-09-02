@@ -159,7 +159,7 @@ def repost_incorrect_valuation_entries_for_company(company):
 	1. Stock Ledger Variance - item-warehouses whose ledger valuation is internally inconsistent
 	   (typically a wrong previous-SLE pick). Fixed with an Item & Warehouse repost.
 	2. Stock and Account Value Comparison - vouchers whose stock value does not match the accounting
-	   ledger. Reposted via the report's own logic (Journal Entries are excluded - ERPNext does not
+	   ledger. Reposted via the report's own logic (Journal Entries are excluded - ASAERP does not
 	   repost them). If a voucher's warehouse points at an account that is not of type 'Stock',
 	   reposting can never clear the difference, so System Managers are notified instead."""
 	from erpnext.accounts.utils import get_fiscal_year
@@ -222,7 +222,7 @@ def _repost_stock_account_value_comparison(company, fy_start_date):
 	for row in get_value_comparison(comparison_filters) or []:
 		row = frappe._dict(row)
 
-		# ERPNext does not repost Journal Entries (GL-only postings have no stock ledger to repost).
+		# ASAERP does not repost Journal Entries (GL-only postings have no stock ledger to repost).
 		if row.voucher_type == "Journal Entry":
 			continue
 
