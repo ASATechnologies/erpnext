@@ -1,11 +1,16 @@
+# Translations template for ASAERP.
+# Copyright (C) 2024 Frappe Technologies Pvt. Ltd.
+# This file is distributed under the same license as the ASAERP project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
 msgid ""
 msgstr ""
-"Project-Id-Version: frappe\n"
-"Report-Msgid-Bugs-To: hello@frappe.io\n"
-"POT-Creation-Date: 2026-08-09 09:47+0000\n"
-"PO-Revision-Date: 2026-08-26 11:43\n"
-"Last-Translator: hello@frappe.io\n"
-"Language-Team: Chinese Traditional\n"
+"Project-Id-Version: ASAERP VERSION\n"
+"Report-Msgid-Bugs-To: info@erpnext.com\n"
+"POT-Creation-Date: 2026-07-05 10:19+0000\n"
+"PO-Revision-Date: 2024-01-10 16:34+0553\n"
+"Last-Translator: info@erpnext.com\n"
+"Language-Team: info@erpnext.com\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -953,7 +958,7 @@ msgstr "<span class=\"h4\"><b>報表與&amp; 主檔</b></span>"
 msgid "<span class=\"h4\"><b>Subcontracting Inward and Outward</b></span>"
 msgstr ""
 
-#. Header text in the ERPNext Settings Workspace
+#. Header text in the ASAERP Settings Workspace
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 msgid "<span class=\"h4\"><b>Your Shortcuts\n"
 "\t\t\t\n"
@@ -2246,7 +2251,7 @@ msgstr "应收账款未付科目"
 
 #. Name of a DocType
 #. Label of a Link in the Invoicing Workspace
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/accounts/doctype/accounts_settings/accounts_settings.json
 #: erpnext/accounts/workspace/invoicing/invoicing.json
@@ -9267,7 +9272,7 @@ msgstr "采购价"
 
 #. Name of a DocType
 #. Label of a Link in the Buying Workspace
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/buying/doctype/buying_settings/buying_settings.json
 #: erpnext/buying/workspace/buying/buying.json
@@ -16445,7 +16450,7 @@ msgstr "删除业务单据(交易)"
 msgid "Delete all the Transactions for {0}"
 msgstr "刪除 {0} 的所有交易"
 
-#. Label of a Link in the ERPNext Settings Workspace
+#. Label of a Link in the ASAERP Settings Workspace
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 msgid "Deleted Documents"
 msgstr "已刪除的文件"
@@ -18482,8 +18487,8 @@ msgstr "电流电磁单位"
 
 #. Label of a Desktop Icon
 #: erpnext/desktop_icon/erpnext.json
-msgid "ERPNext"
-msgstr "ERPNext"
+msgid "ASAERP"
+msgstr ""
 
 #. Label of a Desktop Icon
 #. Name of a Workspace
@@ -18491,18 +18496,18 @@ msgstr "ERPNext"
 #: erpnext/desktop_icon/erpnext_settings.json
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 #: erpnext/workspace_sidebar/erpnext_settings.json
-msgid "ERPNext Settings"
-msgstr "ERPNext设置"
+msgid "ASAERP Settings"
+msgstr ""
 
 #. Label of the user_id (Data) field in DocType 'Employee Group Table'
 #: erpnext/setup/doctype/employee_group_table/employee_group_table.json
-msgid "ERPNext User ID"
-msgstr "ERPNext用户ID"
+msgid "ASAERP User ID"
+msgstr ""
 
 #. Description of the 'Maintain Stock' (Check) field in DocType 'Item'
 #: erpnext/stock/doctype/item/item.json
-msgid "ERPNext will make a stock ledger entry for each transaction of this item. Keep unchecked for non-stock or service items."
-msgstr "ERPNext 會為此項目的每筆交易建立庫存分類帳分錄。非庫存或服務項目請勿勾選。"
+msgid "ASAERP will make a stock ledger entry for each transaction of this item. Keep unchecked for non-stock or service items."
+msgstr ""
 
 #. Option for the 'How often should project be updated of Total Purchase Cost
 #. ?' (Select) field in DocType 'Buying Settings'
@@ -21539,9 +21544,9 @@ msgstr "Frappe CRM"
 msgid "Frappe CRM Allowed User"
 msgstr "Frappe CRM 允許使用者"
 
-#: erpnext/crm/frappe_crm_api.py:172
-msgid "Frappe CRM data synchronization is not enabled on ERPNext. Contact System Manager of ERPNext."
-msgstr "ERPNext 上未啟用 Frappe CRM 資料同步。請聯絡 ERPNext 的系統管理員。"
+#: erpnext/crm/frappe_crm_api.py:169
+msgid "Frappe CRM data synchronization is not enabled on ASAERP. Contact System Manager of ASAERP."
+msgstr ""
 
 #: erpnext/setup/install.py:235
 msgid "Frappe School"
@@ -22558,7 +22563,7 @@ msgid "Give free item for every N quantity"
 msgstr "每满多少个就送，多买多送"
 
 #. Name of a DocType
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/setup/doctype/global_defaults/global_defaults.json
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
@@ -24000,12 +24005,12 @@ msgid "If this item has variants, then it cannot be selected in sales orders etc
 msgstr "勾选表示该物料不能用于实际业务，是仅用于生成多规格物料的模板"
 
 #: erpnext/buying/doctype/buying_settings/buying_settings.js:76
-msgid "If this option is configured 'Yes', ERPNext will prevent you from creating a Purchase Invoice or Receipt without creating a Purchase Order first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Order' checkbox in the Supplier master."
-msgstr "若配置为'是'，ERPNext将阻止您先于采购订单创建采购发票或收货单。可在供应商主数据中勾选'允许无采购订单创建采购发票'覆盖此设置"
+msgid "If this option is configured 'Yes', ASAERP will prevent you from creating a Purchase Invoice or Receipt without creating a Purchase Order first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Order' checkbox in the Supplier master."
+msgstr ""
 
 #: erpnext/buying/doctype/buying_settings/buying_settings.js:83
-msgid "If this option is configured 'Yes', ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Receipt' checkbox in the Supplier master."
-msgstr "若配置为'是'，ERPNext将阻止您先于采购收货单创建采购发票。可在供应商主数据中勾选'允许无采购收货单创建采购发票'覆盖此设置"
+msgid "If this option is configured 'Yes', ASAERP will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Receipt' checkbox in the Supplier master."
+msgstr ""
 
 #: erpnext/manufacturing/doctype/manufacturing_settings/manufacturing_settings.js:10
 msgid "If ticked, multiple materials can be used for a single Work Order. This is useful if one or more time consuming products are being manufactured."
@@ -24029,9 +24034,9 @@ msgstr "如果积分无失效日期，请将失效日期设为空或0。"
 msgid "If yes, then this warehouse will be used to store rejected materials"
 msgstr "如勾选则该仓库是检验不合格待退货的拒收仓"
 
-#: erpnext/stock/doctype/item/item.js:1277
-msgid "If you are maintaining stock of this Item in your Inventory, ERPNext will make a stock ledger entry for each transaction of this item."
-msgstr "若在库存中维护此物料，ERPNext将为每笔交易创建库存分类账分录"
+#: erpnext/stock/doctype/item/item.js:1271
+msgid "If you are maintaining stock of this Item in your Inventory, ASAERP will make a stock ledger entry for each transaction of this item."
+msgstr ""
 
 #. Description of the 'Unreconciled Entries' (Section Break) field in DocType
 #. 'Payment Reconciliation'
@@ -24235,7 +24240,7 @@ msgstr "匯入銀行對帳單"
 msgid "Import Chart of Accounts from a csv file"
 msgstr "从csv文件导入科目表"
 
-#. Label of a Link in the ERPNext Settings Workspace
+#. Label of a Link in the ASAERP Settings Workspace
 #. Label of a Link in the Home Workspace
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 #: erpnext/setup/workspace/home/home.json
@@ -49288,7 +49293,7 @@ msgstr "销售价"
 
 #. Name of a DocType
 #. Label of a Link in the Selling Workspace
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/selling/doctype/selling_settings/selling_settings.json
 #: erpnext/selling/workspace/selling/selling.json
@@ -52375,7 +52380,7 @@ msgstr "预留库存(库存单位)"
 
 #. Label of the auto_accounting_for_stock_settings (Section Break) field in
 #. DocType 'Company'
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Name of a DocType
 #. Label of a Link in the Stock Workspace
 #. Label of a Workspace Sidebar Item
@@ -55995,8 +56000,8 @@ msgid "This action will stop future billing. Are you sure you want to cancel thi
 msgstr "此操作将停止未来的结算。您确定要取消此订阅吗？"
 
 #: erpnext/accounts/doctype/bank_account/bank_account.js:35
-msgid "This action will unlink this account from any external service integrating ERPNext with your bank accounts. It cannot be undone. Are you certain ?"
-msgstr "此操作将取消此账户与将ERPNext与您的银行账户集成的任何外部服务的链接。它无法撤销。你确定吗 ？"
+msgid "This action will unlink this account from any external service integrating ASAERP with your bank accounts. It cannot be undone. Are you certain ?"
+msgstr ""
 
 #. Description of the 'Allow Sales Order creation for expired Quotation'
 #. (Check) field in DocType 'Selling Settings'
@@ -59609,9 +59614,9 @@ msgstr "使用者沒有選擇／讀取此科目的權限。"
 msgid "User has not applied rule on the invoice {0}"
 msgstr "用户未在发票{0}上应用规则"
 
-#: erpnext/crm/frappe_crm_api.py:183
-msgid "User not allowed to synchronize data from Frappe CRM on ERPNext. Contact System Manager of ERPNext."
-msgstr "不允許使用者從 Frappe CRM 同步資料至 ERPNext。請聯絡 ERPNext 的系統管理員。"
+#: erpnext/crm/frappe_crm_api.py:176
+msgid "User not allowed to synchronize data from Frappe CRM on ASAERP. Contact System Manager of ASAERP."
+msgstr ""
 
 #: erpnext/setup/doctype/employee/employee.py:298
 msgid "User {0} does not exist"
@@ -60666,8 +60671,8 @@ msgid "Vouchers"
 msgstr "凭证"
 
 #: erpnext/patches/v15_0/remove_exotel_integration.py:32
-msgid "WARNING: Exotel app has been separated from ERPNext, please install the app to continue using Exotel integration."
-msgstr "警告：Exotel应用已从ERPNext分离，请安装该应用以继续使用Exotel集成"
+msgid "WARNING: Exotel app has been separated from ASAERP, please install the app to continue using Exotel integration."
+msgstr ""
 
 #. Label of the wip_composite_asset (Link) field in DocType 'Purchase Invoice
 #. Item'
@@ -62262,9 +62267,9 @@ msgstr "零數量明細項目"
 msgid "Zip File"
 msgstr "压缩文件"
 
-#: erpnext/stock/reorder_item.py:376
-msgid "[Important] [ERPNext] Auto Reorder Errors"
-msgstr "[重要][ERPNext]自动补货错误"
+#: erpnext/stock/reorder_item.py:374
+msgid "[Important] [ASAERP] Auto Reorder Errors"
+msgstr ""
 
 #: erpnext/controllers/status_updater.py:306
 msgid "`Allow Negative rates for Items`"

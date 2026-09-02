@@ -970,7 +970,7 @@ msgstr "<span class=\"h4\"><b>Тайлангууд &amp; Магиструуд</b
 msgid "<span class=\"h4\"><b>Subcontracting Inward and Outward</b></span>"
 msgstr "<span class=\"h4\"><b>Дотоод болон гадаад гэрээгээр туслан гүйцэтгэгчээр ажиллах</b></span>"
 
-#. Header text in the ERPNext Settings Workspace
+#. Header text in the ASAERP Settings Workspace
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 msgid "<span class=\"h4\"><b>Your Shortcuts\n"
 "\t\t\t\n"
@@ -2263,7 +2263,7 @@ msgstr "Авлагын данс Төлөөгүй данс"
 
 #. Name of a DocType
 #. Label of a Link in the Invoicing Workspace
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/accounts/doctype/accounts_settings/accounts_settings.json
 #: erpnext/accounts/workspace/invoicing/invoicing.json
@@ -9288,7 +9288,7 @@ msgstr "Худалдан авах ханш"
 
 #. Name of a DocType
 #. Label of a Link in the Buying Workspace
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/buying/doctype/buying_settings/buying_settings.json
 #: erpnext/buying/workspace/buying/buying.json
@@ -16466,7 +16466,7 @@ msgstr "Гүйлгээг устгах"
 msgid "Delete all the Transactions for {0}"
 msgstr "{0}-н бүх гүйлгээг устгах"
 
-#. Label of a Link in the ERPNext Settings Workspace
+#. Label of a Link in the ASAERP Settings Workspace
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 msgid "Deleted Documents"
 msgstr "Устгасан баримт бичиг"
@@ -18503,8 +18503,8 @@ msgstr "Одоогийн EMU"
 
 #. Label of a Desktop Icon
 #: erpnext/desktop_icon/erpnext.json
-msgid "ERPNext"
-msgstr "ERPNext"
+msgid "ASAERP"
+msgstr "ASAERP"
 
 #. Label of a Desktop Icon
 #. Name of a Workspace
@@ -18512,18 +18512,18 @@ msgstr "ERPNext"
 #: erpnext/desktop_icon/erpnext_settings.json
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 #: erpnext/workspace_sidebar/erpnext_settings.json
-msgid "ERPNext Settings"
-msgstr "ERPNext тохиргоо"
+msgid "ASAERP Settings"
+msgstr "ASAERP тохиргоо"
 
 #. Label of the user_id (Data) field in DocType 'Employee Group Table'
 #: erpnext/setup/doctype/employee_group_table/employee_group_table.json
-msgid "ERPNext User ID"
-msgstr "ERPNext хэрэглэгчийн ID"
+msgid "ASAERP User ID"
+msgstr "ASAERP хэрэглэгчийн ID"
 
 #. Description of the 'Maintain Stock' (Check) field in DocType 'Item'
 #: erpnext/stock/doctype/item/item.json
-msgid "ERPNext will make a stock ledger entry for each transaction of this item. Keep unchecked for non-stock or service items."
-msgstr "ERPNext нь энэ барааны гүйлгээ бүрийн хувьд бараа материалын бүртгэлийн бичилт хийнэ. Бараа материалын бус болон үйлчилгээний барааны хувьд тэмдэглэгээ хийлгүй байлгаарай."
+msgid "ASAERP will make a stock ledger entry for each transaction of this item. Keep unchecked for non-stock or service items."
+msgstr "ASAERP нь энэ барааны гүйлгээ бүрийн хувьд бараа материалын бүртгэлийн бичилт хийнэ. Бараа материалын бус болон үйлчилгээний барааны хувьд тэмдэглэгээ хийлгүй байлгаарай."
 
 #. Option for the 'How often should project be updated of Total Purchase Cost
 #. ?' (Select) field in DocType 'Buying Settings'
@@ -21564,8 +21564,8 @@ msgid "Frappe CRM Allowed User"
 msgstr "Frappe CRM зөвшөөрөгдсөн хэрэглэгч"
 
 #: erpnext/crm/frappe_crm_api.py:172
-msgid "Frappe CRM data synchronization is not enabled on ERPNext. Contact System Manager of ERPNext."
-msgstr "Frappe CRM өгөгдлийн синхрончлол ERPNext дээр идэвхжээгүй байна. ERPNext-ийн системийн менежертэй холбогдоно уу."
+msgid "Frappe CRM data synchronization is not enabled on ASAERP. Contact System Manager of ASAERP."
+msgstr "Frappe CRM өгөгдлийн синхрончлол ASAERP дээр идэвхжээгүй байна. ASAERP-ийн системийн менежертэй холбогдоно уу."
 
 #: erpnext/setup/install.py:235
 msgid "Frappe School"
@@ -22582,7 +22582,7 @@ msgid "Give free item for every N quantity"
 msgstr "N тоо хэмжээ бүрт үнэгүй бараа өгнө үү"
 
 #. Name of a DocType
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/setup/doctype/global_defaults/global_defaults.json
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
@@ -24023,12 +24023,12 @@ msgid "If this item has variants, then it cannot be selected in sales orders etc
 msgstr "Хэрэв энэ зүйл хувилбаруудтай бол борлуулалтын захиалга гэх мэт зүйлсээс сонгох боломжгүй."
 
 #: erpnext/buying/doctype/buying_settings/buying_settings.js:76
-msgid "If this option is configured 'Yes', ERPNext will prevent you from creating a Purchase Invoice or Receipt without creating a Purchase Order first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Order' checkbox in the Supplier master."
-msgstr "Хэрэв энэ сонголтыг 'Тийм' гэж тохируулсан бол ERPNext нь таныг эхлээд Худалдан авалтын захиалга үүсгэхгүйгээр Худалдан авалтын нэхэмжлэх эсвэл баримт үүсгэхээс сэргийлнэ. Нийлүүлэгчийн мастер хэсэгт байрлах 'Худалдан авалтын захиалгагүйгээр худалдан авалтын нэхэмжлэх үүсгэхийг зөвшөөрөх' гэсэн чагтыг идэвхжүүлснээр тодорхой нийлүүлэгчийн хувьд энэ тохиргоог хүчингүй болгож болно."
+msgid "If this option is configured 'Yes', ASAERP will prevent you from creating a Purchase Invoice or Receipt without creating a Purchase Order first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Order' checkbox in the Supplier master."
+msgstr "Хэрэв энэ сонголтыг 'Тийм' гэж тохируулсан бол ASAERP нь таныг эхлээд Худалдан авалтын захиалга үүсгэхгүйгээр Худалдан авалтын нэхэмжлэх эсвэл баримт үүсгэхээс сэргийлнэ. Нийлүүлэгчийн мастер хэсэгт байрлах 'Худалдан авалтын захиалгагүйгээр худалдан авалтын нэхэмжлэх үүсгэхийг зөвшөөрөх' гэсэн чагтыг идэвхжүүлснээр тодорхой нийлүүлэгчийн хувьд энэ тохиргоог хүчингүй болгож болно."
 
 #: erpnext/buying/doctype/buying_settings/buying_settings.js:83
-msgid "If this option is configured 'Yes', ERPNext will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Receipt' checkbox in the Supplier master."
-msgstr "Хэрэв энэ сонголтыг 'Тийм' гэж тохируулсан бол ERPNext нь таныг эхлээд Худалдан авалтын баримт үүсгэхгүйгээр Худалдан авалтын нэхэмжлэх үүсгэхээс сэргийлнэ. Нийлүүлэгчийн мастер хэсэгт байрлах 'Худалдан авалтын баримтгүйгээр худалдан авалтын нэхэмжлэх үүсгэхийг зөвшөөрөх' гэсэн чагтыг идэвхжүүлснээр тодорхой нийлүүлэгчийн хувьд энэ тохиргоог хүчингүй болгож болно."
+msgid "If this option is configured 'Yes', ASAERP will prevent you from creating a Purchase Invoice without creating a Purchase Receipt first. This configuration can be overridden for a particular supplier by enabling the 'Allow Purchase Invoice Creation Without Purchase Receipt' checkbox in the Supplier master."
+msgstr "Хэрэв энэ сонголтыг 'Тийм' гэж тохируулсан бол ASAERP нь таныг эхлээд Худалдан авалтын баримт үүсгэхгүйгээр Худалдан авалтын нэхэмжлэх үүсгэхээс сэргийлнэ. Нийлүүлэгчийн мастер хэсэгт байрлах 'Худалдан авалтын баримтгүйгээр худалдан авалтын нэхэмжлэх үүсгэхийг зөвшөөрөх' гэсэн чагтыг идэвхжүүлснээр тодорхой нийлүүлэгчийн хувьд энэ тохиргоог хүчингүй болгож болно."
 
 #: erpnext/manufacturing/doctype/manufacturing_settings/manufacturing_settings.js:10
 msgid "If ticked, multiple materials can be used for a single Work Order. This is useful if one or more time consuming products are being manufactured."
@@ -24053,8 +24053,8 @@ msgid "If yes, then this warehouse will be used to store rejected materials"
 msgstr "Хэрэв тийм бол энэ агуулахыг татгалзсан материалыг хадгалахад ашиглана"
 
 #: erpnext/stock/doctype/item/item.js:1277
-msgid "If you are maintaining stock of this Item in your Inventory, ERPNext will make a stock ledger entry for each transaction of this item."
-msgstr "Хэрэв та энэ барааны нөөцийг бараа материалдаа хадгалж байгаа бол ERPNext нь энэ барааны гүйлгээ бүрийн хувьд бараа материалын бүртгэлийн бичилт хийх болно."
+msgid "If you are maintaining stock of this Item in your Inventory, ASAERP will make a stock ledger entry for each transaction of this item."
+msgstr "Хэрэв та энэ барааны нөөцийг бараа материалдаа хадгалж байгаа бол ASAERP нь энэ барааны гүйлгээ бүрийн хувьд бараа материалын бүртгэлийн бичилт хийх болно."
 
 #. Description of the 'Unreconciled Entries' (Section Break) field in DocType
 #. 'Payment Reconciliation'
@@ -24258,7 +24258,7 @@ msgstr "Импортын банкны мэдэгдэл"
 msgid "Import Chart of Accounts from a csv file"
 msgstr "csv файлаас дансны диаграммыг импортлох"
 
-#. Label of a Link in the ERPNext Settings Workspace
+#. Label of a Link in the ASAERP Settings Workspace
 #. Label of a Link in the Home Workspace
 #: erpnext/setup/workspace/erpnext_settings/erpnext_settings.json
 #: erpnext/setup/workspace/home/home.json
@@ -49312,7 +49312,7 @@ msgstr "Борлуулалтын ханш"
 
 #. Name of a DocType
 #. Label of a Link in the Selling Workspace
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Label of a Workspace Sidebar Item
 #: erpnext/selling/doctype/selling_settings/selling_settings.json
 #: erpnext/selling/workspace/selling/selling.json
@@ -52399,7 +52399,7 @@ msgstr "Нөөцөлсөн бараа (UOM-д байгаа)"
 
 #. Label of the auto_accounting_for_stock_settings (Section Break) field in
 #. DocType 'Company'
-#. Label of a shortcut in the ERPNext Settings Workspace
+#. Label of a shortcut in the ASAERP Settings Workspace
 #. Name of a DocType
 #. Label of a Link in the Stock Workspace
 #. Label of a Workspace Sidebar Item
@@ -56019,8 +56019,8 @@ msgid "This action will stop future billing. Are you sure you want to cancel thi
 msgstr "Энэ үйлдэл нь ирээдүйн төлбөр тооцоог зогсоох болно. Та энэ захиалгыг цуцлахдаа итгэлтэй байна уу?"
 
 #: erpnext/accounts/doctype/bank_account/bank_account.js:35
-msgid "This action will unlink this account from any external service integrating ERPNext with your bank accounts. It cannot be undone. Are you certain ?"
-msgstr "Энэ үйлдэл нь энэ дансыг ERPNext-ийг таны банкны данстай нэгтгэсэн аливаа гадны үйлчилгээнээс салгах болно. Үүнийг буцаах боломжгүй. Та итгэлтэй байна уу?"
+msgid "This action will unlink this account from any external service integrating ASAERP with your bank accounts. It cannot be undone. Are you certain ?"
+msgstr "Энэ үйлдэл нь энэ дансыг ASAERP-ийг таны банкны данстай нэгтгэсэн аливаа гадны үйлчилгээнээс салгах болно. Үүнийг буцаах боломжгүй. Та итгэлтэй байна уу?"
 
 #. Description of the 'Allow Sales Order creation for expired Quotation'
 #. (Check) field in DocType 'Selling Settings'
@@ -59634,8 +59634,8 @@ msgid "User has not applied rule on the invoice {0}"
 msgstr "Хэрэглэгч нэхэмжлэх дээр дүрмийг хэрэглээгүй байна {0}"
 
 #: erpnext/crm/frappe_crm_api.py:183
-msgid "User not allowed to synchronize data from Frappe CRM on ERPNext. Contact System Manager of ERPNext."
-msgstr "Хэрэглэгч ERPNext дээрх Frappe CRM-ээс өгөгдлийг синхрончлохыг зөвшөөрөөгүй. ERPNext-ийн системийн менежертэй холбогдоно уу."
+msgid "User not allowed to synchronize data from Frappe CRM on ASAERP. Contact System Manager of ASAERP."
+msgstr "Хэрэглэгч ASAERP дээрх Frappe CRM-ээс өгөгдлийг синхрончлохыг зөвшөөрөөгүй. ASAERP-ийн системийн менежертэй холбогдоно уу."
 
 #: erpnext/setup/doctype/employee/employee.py:298
 msgid "User {0} does not exist"
@@ -60690,7 +60690,7 @@ msgid "Vouchers"
 msgstr "Ваучерууд"
 
 #: erpnext/patches/v15_0/remove_exotel_integration.py:32
-msgid "WARNING: Exotel app has been separated from ERPNext, please install the app to continue using Exotel integration."
+msgid "WARNING: Exotel app has been separated from ASAERP, please install the app to continue using Exotel integration."
 msgstr "АНХААРУУЛГА: Exotel аппликейшнийг ERP-ээс салгасан. Дараа нь Exotel интеграцийг үргэлжлүүлэн ашиглахын тулд аппликейшнийг суулгана уу."
 
 #. Label of the wip_composite_asset (Link) field in DocType 'Purchase Invoice
@@ -62287,8 +62287,8 @@ msgid "Zip File"
 msgstr "Зип файл"
 
 #: erpnext/stock/reorder_item.py:376
-msgid "[Important] [ERPNext] Auto Reorder Errors"
-msgstr "[Чухал] [ERPNext] Автоматаар дахин захиалах алдаанууд"
+msgid "[Important] [ASAERP] Auto Reorder Errors"
+msgstr "[Чухал] [ASAERP] Автоматаар дахин захиалах алдаанууд"
 
 #: erpnext/controllers/status_updater.py:306
 msgid "`Allow Negative rates for Items`"
