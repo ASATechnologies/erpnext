@@ -14,7 +14,7 @@ STANDARD_TRANSACTION_ROLES = [
 
 
 def execute():
-	"""Seed SMS Settings.allowed_roles with ERPNext's standard transaction roles."""
+	"""Seed SMS Settings.allowed_roles with ASAERP's standard transaction roles."""
 	frappe.reload_doctype("SMS Settings")
 
 	if not frappe.get_meta("SMS Settings").has_field("allowed_roles"):
