@@ -897,7 +897,7 @@ def update_company_current_month_sales(company):
 		)
 	).run(pluck=True)[0] or 0
 
-	# Fieldname in standard ERPNext is `total_monthly_sales`
+	# Fieldname in standard ASAERP is `total_monthly_sales`
 	frappe.db.set_value(
 		"Company",
 		company,
